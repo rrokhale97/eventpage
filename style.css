@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  height: 655px;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+.logo img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  filter: invert(10%);
+}
+.title img {
+  position: absolute;
+  width: 400px;
+  top: 32%;
+  left: 37%;
+  filter: brightness(140%);
+}
+.title p {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: rgb(226, 226, 226);
+  text-align: center;
+  font-size: 23px;
+  font-family: roboto, sans-serif;
+}
+.btn-ticket {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  background: rgb(235, 56, 56);
+}
+.btn-ticket:hover {
+  cursor: pointer;
+  background: rgb(141, 35, 35);
+}
+#btns {
+  position: absolute;
+  top: 67%;
+  left: 37%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+#lg-buytickets {
+  width: 170px;
+  height: 50px;
+  border: 1px red;
+  color: white;
+  background: rgb(250, 36, 36);
+}
+#lg-buytickets:hover {
+  cursor: pointer;
+  background: rgb(141, 35, 35);
+}
+#btn-video {
+  width: 170px;
+  height: 50px;
+  color: white;
+  background: transparent;
+  border: 1px solid red;
+}
+#btn-video:hover {
+  cursor: pointer;
+  background: rgb(141, 35, 35);
+  border-color: rgb(141, 35, 35);
+  transition: 1s;
+}
+#counter {
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.count span {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0 13px 0 13px;
+  background-color: transparent;
+  border: 2px solid rgb(43, 42, 42);
+  border-radius: 4px;
+  font-style: roboto, sans-serif;
+}
+.count {
+  display: flex;
+  gap: 5px;
+}
+#counter #days::before {
+  content: "DAYS";
+  color: white;
+  position: absolute;
+  top: -40%;
+  left: 5%;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+#counter #hours::before {
+  content: "HOURS";
+  color: white;
+  position: absolute;
+  top: -40%;
+  left: 29.5%;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+#counter #minutes::before {
+  content: "MINUTES";
+  color: white;
+  position: absolute;
+  top: -40%;
+  left: 53%;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+#counter #second::before {
+  content: "SECONDS";
+  color: white;
+  position: absolute;
+  top: -40%;
+  left: 79%;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.post-img {
+  width: 100%;
+}
+section {
+  margin-top: -5px;
+  width: 96.47%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #12171d;
+  padding: 0 1.5rem;
+}
+.blog-post {
+  width: 75%;
+  max-width: 98rem;
+  padding: 5rem;
+  background-color: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+.blog-post_img {
+  min-width: 25rem;
+  max-width: 25rem;
+  height: 20rem;
+  transform: translateX(-8rem);
+  position: relative;
+}
+.blog-post_img img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+.blog-post_img::before {
+  content: "";
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.5);
+  border-radius: 0.8rem;
+}
+.blog-post_date span {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.blog-post_date #city {
+  color: black;
+}
+.blog-post_title {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: rgb(150 27 172);
+}
+.blog-post_text {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+.blog-post_cta {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  background-image: linear-gradient(to right, #d9394b 0%, #491896 100%);
+  border-radius: 0.8rem;
+  text-decoration: none;
+}
+.blog-post_cta:hover {
+  background-image: linear-gradient(to right, #491896 0%, #d9394b 100%);
+}
+
+.promos {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.promo {
+  width: 250px;
+  background: #414e66;
+  color: #f9f9f9;
+  float: left;
+}
+.deal {
+  padding: 10px 0 0 0;
+}
+.deal span {
+  display: block;
+  text-align: center;
+}
+.deal span:first-of-type {
+  font-size: 23px;
+}
+.deal span:last-of-type {
+  font-size: 13px;
+}
+.promo .price {
+  display: block;
+  width: 250px;
+  background: #292b2e;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 23px;
+  padding: 17px 0 17px 0;
+}
+ul {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  color: #999999;
+}
+li {
+  display: block;
+  margin: 10px 0 0 0;
+}
+.btn-pricing {
+  border: none;
+  border-radius: 40px;
+  background: #292b2e;
+  color: #f9f9f9;
+  padding: 10px 37px;
+  margin: 10px 0 20px 60px;
+}
+.scale {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px 1px rgba(20, 20, 20, 0.8);
+}
+.scale button {
+  background: #64aaa4;
+}
+.scale .price {
+  color: #64aaa4;
+}
+.morbi {
+  background-image: url("images/footer3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.center {
+  text-align: center;
+  padding: 100px;
+}
+.center h2 {
+  color: rgba(255, 254, 254, 0.993);
+  border: 1px solid red;
+  background-image: linear-gradient(to right, #1c0205 0%, #9286a5 100%);
+  font-size: 60px;
+  font-weight: 500;
+}
+.center h2:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #9286a5 0%, #1c0205 100%);
+}
+.center p {
+  color: rgba(242, 245, 240, 0.993);
+  font-size: 25px;
+  font-weight: 500;
+  font-style: bold;
+}
+footer {
+  padding-top: 350px;
+}
+
+@media (max-width: 700px) {
+  .logo img {
+    width: 150px;
+    height: 40px;
+    top: 3%;
+    left: 2%;
+  }
+  .btn-ticket {
+    width: 110px;
+    height: 36px;
+    top: 3%;
+    left: 68%;
+  }
+  .title img {
+    width: 301px;
+    top: 33%;
+    left: 13%;
+  }
+  .title p {
+    font-size: 7px;
+    top: 50%;
+    left: 13%;
+  }
+  #btns {
+    top: 64%;
+    left: 11%;
+  }
+  #lg-buytickets {
+    width: 130px;
+    height: 40px;
+  }
+  #btn-video {
+    width: 130px;
+    height: 40px;
+  }
+  #counter {
+    top: 83%;
+    left: 1%;
+    gap: 13px;
+  }
+  .count span {
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 6px 0 6px;
+    gap: 4px;
+  }
+  #counter #days::before {
+    top: -58%;
+    left: 5%;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  #counter #hours::before {
+    top: -58%;
+    left: 29.5;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  #counter #minutes::before {
+    top: -58%;
+    left: 52%;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  #counter #second::before {
+    top: -58%;
+    left: 78%;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  section {
+    margin-top: -13px;
+    height: 162vh;
+    width: 87.47%;
+  }
+  .blog-post {
+    padding: 2.5rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    height: 784px;
+  }
+  .blog-post_img {
+    min-width: 100%;
+    max-width: 100%;
+    transform: translate(0, -8rem);
+  }
+  .center h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .center p {
+    font-size: 9px;
+    font-weight: 500;
+  }
+}
